@@ -41,180 +41,215 @@
 
     <!-- ================== STRUCTURED DATA (SCHEMA) ================== -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "Vivalis",
-        "description": "Vivalis is a natural male enhancement supplement designed to support men dealing with low stamina, reduced performance, and confidence challenges.",
-        "image": "https://www.vivalisofficial.com/Images/hero-section-bottle.webp",
-        "brand": {
-          "@type": "Brand",
-          "name": "Vivalis Labs"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": "Vivalis",
+          "description": "Vivalis is a natural male enhancement supplement designed to support men dealing with low stamina, reduced performance, and confidence challenges. Advanced formula for blood flow, stamina, and vitality.",
+          "image": [
+            "https://www.vivalisofficial.com/Images/hero-section-bottle.webp",
+            "https://www.vivalisofficial.com/Images/vivalis capsules bottle packaging.webp",
+            "https://www.vivalisofficial.com/Images/natural ingredients in vivalis capsules.webp",
+            "https://www.vivalisofficial.com/Images/diagram showing blood flow improvement from vivalis pills.webp",
+            "https://www.vivalisofficial.com/Images/Vivalis_gradual_results_timeline_2-4_weeks_consistent_use.webp"
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "Vivalis Labs"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "url": "https://www.vivalisofficial.com/",
+            "priceCurrency": "USD",
+            "lowPrice": "158.00",
+            "highPrice": "294.00",
+            "offerCount": "3",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Starter Pack (2 Bottles)",
+                "price": "158.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "itemCondition": "https://schema.org/NewCondition"
+              },
+              {
+                "@type": "Offer",
+                "name": "Most Popular (3 Bottles)",
+                "price": "207.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "itemCondition": "https://schema.org/NewCondition"
+              },
+              {
+                "@type": "Offer",
+                "name": "Best Value (6 Bottles)",
+                "price": "294.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "itemCondition": "https://schema.org/NewCondition"
+              }
+            ]
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "6"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Mark Reynolds" },
+              "datePublished": "2026-04-15",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "The first couple of weeks were subtle, but by week three, my energy levels improved noticeably. It’s not instant, but the consistency is what impressed me."
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Daniel Foster" },
+              "datePublished": "2026-04-20",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "Around the fourth week, I noticed better stamina and less fatigue. It feels natural, not forced."
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "George Brown" },
+              "datePublished": "2026-03-10",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "The results weren’t immediate, but by week three, I could feel improved endurance and better overall confidence."
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Michael Thompson" },
+              "datePublished": "2026-02-28",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "With vivalis pro, the change felt more stable over time. I also appreciated that the ingredients are familiar and not overly complicated."
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Robert Johnson" },
+              "datePublished": "2026-03-25",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "After about a month, I noticed less fatigue and better consistency. It’s not dramatic, but it’s reliable, which matters more to me."
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Daniel Brown" },
+              "datePublished": "2026-04-05",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "After using the vivalis men's health support for a few weeks, I noticed better stamina and overall energy."
+            }
+          ]
         },
-        "offers": {
-          "@type": "AggregateOffer",
-          "url": "https://www.vivalisofficial.com/",
-          "priceCurrency": "USD",
-          "lowPrice": "49.00",
-          "highPrice": "79.00",
-          "offerCount": "3"
+        {
+          "@type": "HowTo",
+          "name": "How to Use Vivalis",
+          "description": "Achieving the best results with Vivalis requires consistency. Follow these simple steps for daily vitality support.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Daily Dosage",
+              "text": "Take two (2) Vivalis capsules daily with a full glass of water."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Timing",
+              "text": "For best absorption, take the capsules consistently at the same time each day."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Hydration",
+              "text": "Maintain proper hydration throughout the day to support blood circulation."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Consistency",
+              "text": "Use the supplement daily for at least 3-4 weeks to allow the natural ingredients to build up in your system."
+            }
+          ]
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "6"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Mark Reynolds" },
-            "datePublished": "2026-04-15",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "The first couple of weeks were subtle, but by week three, my energy levels improved noticeably. It’s not instant, but the consistency is what impressed me."
-          },
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Daniel Foster" },
-            "datePublished": "2026-04-20",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "Around the fourth week, I noticed better stamina and less fatigue. It feels natural, not forced."
-          },
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "George Brown" },
-            "datePublished": "2026-03-10",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "The results weren’t immediate, but by week three, I could feel improved endurance and better overall confidence."
-          },
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Michael Thompson" },
-            "datePublished": "2026-02-28",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "With vivalis pro, the change felt more stable over time. I also appreciated that the ingredients are familiar and not overly complicated."
-          },
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Robert Johnson" },
-            "datePublished": "2026-03-25",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "After about a month, I noticed less fatigue and better consistency. It’s not dramatic, but it’s reliable, which matters more to me."
-          },
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Daniel Brown" },
-            "datePublished": "2026-04-05",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "After using the vivalis men's health support for a few weeks, I noticed better stamina and overall energy."
-          }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Vivalis?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Vivalis is a natural men’s health supplement designed to support blood flow, stamina, and performance using scientifically backed ingredients. It focuses on long-term vitality rather than quick fixes."
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Vivalis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vivalis is a natural men’s health supplement designed to support blood flow, stamina, and performance using scientifically backed ingredients like Horny Goat Weed and L-Arginine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Vivalis really work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Vivalis works by supporting the body's natural nitric oxide production and circulation. Results vary, but many users report improved stamina and confidence within 2-4 weeks of consistent use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Vivalis a scam?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, Vivalis is a legitimate dietary supplement formulated in GMP-certified facilities. To ensure authenticity and money-back guarantee eligibility, always purchase from the Vivalis Official Website."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does Vivalis cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vivalis pricing starts as low as $49 per bottle when purchasing a 6-bottle bundle ($294 total). Starter packs and popular bundles are also available."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Vivalis safe to use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Vivalis is non-invasive and made from natural herbal extracts. However, if you have a medical condition or take prescription medication, consult with a doctor before use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Vivalis FDA approved?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Like most dietary supplements, Vivalis is not FDA-approved. However, it is manufactured in facilities that follow FDA-registered and GMP-certified standards for safety and quality."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to use Vivalis for best results?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For optimal results, take 2 capsules daily with water. Consistency is key; most users see significant improvements in stamina and performance after 30 days of regular use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Vivalis really work before and after?",
+              "acceptedAnswer": {
+                "@type": { "@type": "Answer" },
+                "text": "Many users report seeing improved energy levels and more reliable performance after a month of consistent use. Results depend on health factors and routine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where to buy Vivalis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vivalis should only be purchased from the Official Vivalis Website to ensure you receive the genuine product and are covered by the 60-day money-back guarantee."
+              }
             }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Vivalis really work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Results vary, but many users report improved stamina and confidence with consistent use of Vivalis capsules, especially when taken daily for several weeks."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where to buy Vivalis?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Only purchase from the Vivalis official website to avoid counterfeit products and ensure product authenticity, proper storage, and refund eligibility."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Vivalis good for ED?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Vivalis for ED support works by improving blood circulation and nitric oxide levels, which are essential for performance. It is not a medical treatment but may support men experiencing mild performance challenges."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Vivalis legit?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, Vivalis men's health supplement is formulated with known ingredients used in male support formulas and is manufactured under quality-controlled conditions. Always buy from the official source to ensure legitimacy."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Vivalis FDA approved?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Vivalis is not FDA-approved, as dietary supplements are not approved by the FDA. However, it is typically manufactured in FDA-registered and GMP-certified facilities, which follow safety standards."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Vivalis safe to use?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For most healthy adults, Vivalis pills are generally well-tolerated when taken as directed. If you have medical conditions or take medication, consult a healthcare professional first."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does Vivalis work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Vivalis advanced formula works by boosting nitric oxide production, improving blood flow, and supporting vascular function, which are key factors in stamina and performance."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take for Vivalis to work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Most users report noticeable benefits within 2–4 weeks, though results vary depending on consistency, lifestyle, and individual health factors."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you take Vivalis pills?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Take 2 capsules daily with water, preferably at the same time each day to maintain consistent levels in your system."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are the ingredients in Vivalis?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Vivalis ingredients typically include amino acids like L-Arginine and herbal extracts that support circulation, endurance, and male vitality."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How much does Vivalis cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pricing varies depending on bundles. Vivalis 6 bottles usually offer the best value per bottle compared to single purchases."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -719,7 +754,8 @@
             <div class="compare-header">
                 <span class="section-label">Options</span>
                 <h2>Vivalis vs Other Male Enhancement Options</h2>
-                <p>When comparing <strong>Vivalis</strong> with other solutions, the key difference lies in approach.</p>
+                <p>When comparing <strong>Vivalis</strong> with other solutions, the key difference lies in approach.
+                </p>
             </div>
 
             <!-- Row 2: Image + Table side by side -->
@@ -776,7 +812,8 @@
                     <h3>Other Supplements:</h3>
                     <ul class="results-list">
                         <li>
-                            <div class="dot" style="background:#f59e0b;"></div> Often use proprietary blends without transparency
+                            <div class="dot" style="background:#f59e0b;"></div> Often use proprietary blends without
+                            transparency
                         </li>
                         <li>
                             <div class="dot" style="background:#f59e0b;"></div> May rely on hype-driven marketing

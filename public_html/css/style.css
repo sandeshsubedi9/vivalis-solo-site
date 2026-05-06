@@ -1027,20 +1027,23 @@ section:nth-child(even) {
 }
 
 /* ---- COMPARISON ---- */
+/* ---- COMPARISON SECTION ---- */
 #comparison {
   background: var(--frost);
 }
 
-.compare-wrap {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 80px;
-  align-items: start;
+.compare-header {
+  max-width: 700px;
+  margin-bottom: 2.5rem;
 }
 
-.compare-img-col {
-  position: sticky;
-  top: 120px;
+/* Row 2: Image + Table */
+.compare-top-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 2.5rem;
 }
 
 .compare-img-col img {
@@ -1050,9 +1053,31 @@ section:nth-child(even) {
   border: 1px solid var(--steel);
 }
 
-.compare-content h2 {
-  margin-bottom: 1.5rem;
+.compare-table-col {
+  width: 100%;
 }
+
+/* Row 3: Two option cards */
+.compare-options-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 2.5rem;
+}
+
+.compare-option-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--steel);
+}
+
+.compare-option-card h3 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
 
 .table-responsive {
   overflow-x: auto;
@@ -1613,10 +1638,11 @@ section:nth-child(even) {
   .experts-grid,
   .pricing-grid,
   .science-bottom,
-  .compare-wrap {
+  .compare-top-row,
+  .compare-options-row {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
   }
 
   /* Force Text-First for sections where Image is first in HTML */
@@ -1624,7 +1650,6 @@ section:nth-child(even) {
   #how-it-works .hiw-split,
   #results .results-grid,
   #who-not .who-inner,
-  #comparison .compare-wrap,
   #how-to-take .results-grid,
   #guarantee .who-inner,
   #certifications .cert-grid,
@@ -1700,7 +1725,7 @@ section:nth-child(even) {
     min-width: 400px;
   }
 
-  .compare-table th, 
+  .compare-table th,
   .compare-table td {
     padding: 12px 10px;
     font-size: 0.85rem;

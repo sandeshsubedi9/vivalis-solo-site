@@ -1063,8 +1063,8 @@ section:nth-child(even) {
 
 .compare-table {
   width: 100%;
-  min-width: 500px;
-  /* Ensure table doesn't get too squished */
+  min-width: 450px;
+  /* Ensure table doesn't get too squished on larger screens */
   border-collapse: separate;
   border-spacing: 0;
   margin: 1rem 0;
@@ -1693,6 +1693,17 @@ section:nth-child(even) {
 
   .footer-inner {
     grid-template-columns: 1fr;
+  }
+
+  /* Table Mobile Optimization */
+  .compare-table {
+    min-width: 400px;
+  }
+
+  .compare-table th, 
+  .compare-table td {
+    padding: 12px 10px;
+    font-size: 0.85rem;
   }
 
   .footer-bottom {

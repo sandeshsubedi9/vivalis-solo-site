@@ -1612,25 +1612,30 @@ section:nth-child(even) {
   .cert-grid,
   .experts-grid,
   .pricing-grid,
-  .science-bottom {
-    grid-template-columns: 1fr;
+  .science-bottom,
+  .compare-wrap {
+    display: flex;
+    flex-direction: column;
     gap: 40px;
   }
 
-  .about-inner,
-  .results-grid,
-  .cert-grid,
-  .hiw-split,
-  .who-inner,
-  .compare-wrap {
-    display: flex;
+  /* Force Text-First for sections where Image is first in HTML */
+  #about .about-inner,
+  #how-it-works .hiw-split,
+  #results .results-grid,
+  #who-not .who-inner,
+  #comparison .compare-wrap,
+  #how-to-take .results-grid,
+  #guarantee .who-inner,
+  #certifications .cert-grid,
+  #checkout .who-inner,
+  .science-bottom {
     flex-direction: column-reverse;
   }
 
-
   .compare-img-col {
     position: static;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   .hero-img-wrap {

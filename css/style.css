@@ -299,6 +299,40 @@ section:nth-child(even) {
   flex-shrink: 0;
 }
 
+.highlight-minimal {
+  color: var(--royal);
+  font-style: italic;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.hero-cta-trigger {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: var(--slate);
+}
+
+.hero-cta-trigger strong {
+  color: var(--navy);
+}
+
+.cta-arrow {
+  display: inline-block;
+  color: var(--cyan-dark);
+  margin-right: 8px;
+  font-size: 1.1rem;
+  animation: arrow-bounce 2s infinite ease-in-out;
+}
+
+@keyframes arrow-bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
 .hero-img-wrap {
   position: relative;
   text-align: center;
